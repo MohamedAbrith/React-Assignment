@@ -1,0 +1,100 @@
+/* styles/RecipeForm.css */
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Modern font for better readability */
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 700px; /* Increased width for larger forms */
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600; /* Slightly bolder heading */
+    position: relative;
+  }
+  
+  h2::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Consistent gap between form elements */
+  }
+  
+  .TextField, .FormControl {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .TextField label, .FormControl label {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .TextField input, .FormControl select, .TextField textarea {
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .TextField input:focus, .FormControl select:focus, .TextField textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .Button {
+    padding: 14px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500; /* Slightly bolder button text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Button:hover {
+    background-color: #0062cc;
+    transform: scale(1.02);
+  }
+  
+  .Button:active {
+    background-color: #004799;
+  }
+  
+  .Button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
