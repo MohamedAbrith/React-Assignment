@@ -38,7 +38,7 @@ This is a full-stack application for managing recipes. The frontend is built wit
 1. Clone the repository:
 
    ```bash
-   git clonhttps://github.com/MohamedAbrith/React-Assignment.git
+   git clone https://github.com/MohamedAbrith/React-Assignment.git
 
 # Install frontend dependencies
 cd frontend
